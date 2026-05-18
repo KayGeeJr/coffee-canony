@@ -20,17 +20,18 @@ npm run preview
 
 ## Deploy to GitHub Pages
 
-The repo includes a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds and deploys automatically on push to `main`.
+On every push to `main`, GitHub Actions builds the site and publishes to the **`gh-pages`** branch.
 
-**One-time setup** in your repo on GitHub:
+**One-time setup** (required):
 
-1. Go to **Settings → Pages**
-2. Under **Build and deployment**, set **Source** to **GitHub Actions**
-3. Push to `main` — the workflow builds with base path `/coffee-canony/`
+1. Open [Settings → Pages](https://github.com/KayGeeJr/coffee-canony/settings/pages)
+2. Under **Build and deployment → Source**, choose **Deploy from a branch**
+3. Branch: **`gh-pages`** · Folder: **`/ (root)`**
+4. Save, then wait ~1 minute after the Actions workflow completes
 
-Live site: **https://kaygeejr.github.io/coffee-canony/**
+Live URL: **https://kaygeejr.github.io/coffee-canony/**
 
-> If Pages was set to deploy the `main` branch root directly, you would see a white screen — the app must be built first (Vite outputs to `dist/`).
+> **White screen?** You are likely deploying the `main` branch root (source code). That serves raw `index.html` with `/src/main.jsx`, which does not run in the browser. Use the **`gh-pages`** branch instead.
 
 ## Stack
 
