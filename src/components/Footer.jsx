@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.inner}>
         <div className={styles.brand}>
-          <span className={styles.logo}>☺ coffee <em>canony</em></span>
+          <span className={styles.logo}>coffee <em>canony</em></span>
           <p>Not just your average coffee.</p>
         </div>
         <nav className={styles.links} aria-label="Footer">

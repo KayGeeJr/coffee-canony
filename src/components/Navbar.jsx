@@ -33,7 +33,6 @@ export default function Navbar() {
     >
       <div className={styles.inner}>
         <a href="#" className={styles.logo}>
-          <span className={styles.logoMark}>☺</span>
           <span className={styles.logoText}>
             coffee <em>canony</em>
           </span>
