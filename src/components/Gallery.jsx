@@ -1,12 +1,13 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { asset } from '../lib/assets'
 import styles from './Gallery.module.css'
 
 const IMAGES = [
-  { src: '/images/img.jpg', alt: 'Interior seating area' },
-  { src: '/images/download.jpeg', alt: 'Coffee preparation' },
-  { src: '/images/2025-04-21.webp', alt: 'Latte art' },
-  { src: '/images/2025-04-21 (1).jpg', alt: 'Coffee Canony atmosphere' },
+  { src: asset('images/img.jpg'), alt: 'Interior seating area' },
+  { src: asset('images/download.jpeg'), alt: 'Coffee preparation' },
+  { src: asset('images/2025-04-21.webp'), alt: 'Latte art' },
+  { src: asset('images/2025-04-21 (1).jpg'), alt: 'Coffee Canony atmosphere' },
 ]
 
 const container = {

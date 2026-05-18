@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef } from 'react'
+import { asset } from '../lib/assets'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -15,8 +16,8 @@ export default function Hero() {
     <section ref={ref} className={styles.hero}>
       <motion.div className={styles.bg} style={{ y: imageY }}>
         <picture>
-          <source media="(min-width: 1024px)" srcSet="/images/banner2.jpg" />
-          <img src="/images/banner.jpg" alt="Coffee Canony storefront at Karaglen Mall" />
+          <source media="(min-width: 1024px)" srcSet={asset('images/banner2.jpg')} />
+          <img src={asset('images/banner.jpg')} alt="Coffee Canony storefront at Karaglen Mall" />
         </picture>
         <div className={styles.overlay} />
       </motion.div>

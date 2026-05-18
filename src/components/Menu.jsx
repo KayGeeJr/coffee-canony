@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { asset } from '../lib/assets'
 import styles from './Menu.module.css'
 
 const TABS = [
-  { id: 'coffee', label: 'Coffee & Drinks', image: '/images/coffe_menu.webp', alt: 'Coffee Canony drinks menu' },
-  { id: 'food', label: 'Food & Treats', image: '/images/food_menu.webp', alt: 'Coffee Canony food menu' },
+  { id: 'coffee', label: 'Coffee & Drinks', image: asset('images/coffe_menu.webp'), alt: 'Coffee Canony drinks menu' },
+  { id: 'food', label: 'Food & Treats', image: asset('images/food_menu.webp'), alt: 'Coffee Canony food menu' },
 ]
 
 export default function Menu() {

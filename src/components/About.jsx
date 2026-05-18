@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useScrollReveal } from '../hooks/useScrollReveal'
+import { asset } from '../lib/assets'
 import styles from './About.module.css'
 
 export default function About() {
@@ -15,7 +16,7 @@ export default function About() {
           transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
         >
           <div className={styles.imageMain}>
-            <img src="/images/2025-04-21 (1).webp" alt="Coffee and pastries at Coffee Canony" />
+            <img src={asset('images/2025-04-21 (1).webp')} alt="Coffee and pastries at Coffee Canony" />
           </div>
           <motion.div
             className={styles.imageAccent}
@@ -23,7 +24,7 @@ export default function About() {
             animate={visible ? { opacity: 1, scale: 1 } : {}}
             transition={{ delay: 0.2, duration: 0.8 }}
           >
-            <img src="/images/unnamed.webp" alt="Freshly brewed espresso" />
+            <img src={asset('images/unnamed.webp')} alt="Freshly brewed espresso" />
           </motion.div>
         </motion.div>
 
